@@ -1,5 +1,6 @@
 import logging
 import sys  # The sys module in Python provides various functions and variables that are used to manipulate different parts of the Python runtime environment.
+from src.logger import logging
 def error_message_details(error,error_details:sys):
     _,_,exc_tb=error_details.exc_info()
     file_name=exc_tb.tb_frame.f_code.co_filename
@@ -21,6 +22,6 @@ if __name__=="__main__":
     try:
         1/0
     except Exception as e:
-        logging.info("Catching the exception for devid eby zero")
+        logging.error("devide by zero erro from exception")
         raise CustomeException(e,sys)
     
