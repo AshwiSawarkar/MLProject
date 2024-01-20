@@ -3,4 +3,4 @@ numpy
 seaborn 
 Keras
 
-#-e. # The -e option stands for "editable". This is a flag used with pip, the Python package installer. 
+-e. # The -e option stands for "editable". This is a flag used with pip, the Python package installer. 
