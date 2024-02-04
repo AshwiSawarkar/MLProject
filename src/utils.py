@@ -3,6 +3,8 @@ import sys
 import numpy as np
 import pandas as pd
 from src.exception import CustomeException
+import dill
+import pickle
 
 def save_object(file_path,obj):
     try:
@@ -10,6 +12,7 @@ def save_object(file_path,obj):
         os.makedirs(dir_path,exist_ok=True)
         
         with open(file_path,"wb") as file_obj:
-            dill.dump(obj,file_path)
+            dill.dump(obj,file_obj)
     except Exception as ex:
-        raise CustomeException(e,sys)
+        raise CustomeException(ex,sys)
+

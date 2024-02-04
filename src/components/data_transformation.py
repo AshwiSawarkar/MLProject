@@ -21,8 +21,8 @@ class DataTransformation:
     
     def get_data_transformer_obj(self):  # to create a pkl file for converting cat feature into numerrical feature nothing but data transformation 
         try:
-            numerical_features : ["reading_score", "writing_score"]
-            categorical_features : ["gender",
+            numerical_features = ["reading_score", "writing_score"]
+            categorical_features = ["gender",
             "race_ethnicity", 
             "parental_level_of_education", 
             "lunch", 
@@ -30,7 +30,7 @@ class DataTransformation:
             num_pipleine=Pipeline(
                 steps=[
                     ("imputer",SimpleImputer(strategy="median")),
-                    ("scalar",StandardScaler())
+                    ("scalar",StandardScaler(with_mean=False))
                 ]
             )
             logging.info("Numerical coloumns standard scalling is completed  ")
@@ -39,7 +39,7 @@ class DataTransformation:
                 steps=[
                     ("imputer",SimpleImputer(strategy="most_frequent")),
                     ("one_hot_encoder",OneHotEncoder()),
-                    ("scalar",StandardScaler())
+                    ("scalar",StandardScaler(with_mean=False))
                 ]
             )
             logging.info("Categorical coloumns encoding is completed ")
@@ -62,19 +62,19 @@ class DataTransformation:
             logging.info("Data reading is done")
             logging.info("obtaining pre-procesising object")
             preprocessor_obj=self.get_data_transformer_obj()
-            target_Coloumn=["Math_score"]
+            target_Column=['math_score']
             numerical_features : ["reading_score", "writing_score"]
 
-            input_feature_train_df=train_df.drop(coloumns=[target_Coloumn],axis=1)
-            target_feature_train_df=train_df[target_Coloumn]
+            input_feature_train_df=train_df.drop(columns=target_Column,axis=1)
+            target_feature_train_df=train_df[target_Column]
 
-            input_feature_test_df=test_df.drop(coloumns=[target_Coloumn],axis=1)
-            target_feature_test_df=test_df[target_Coloumn]
+            input_feature_test_df=test_df.drop(columns=target_Column,axis=1)
+            target_feature_test_df=test_df[target_Column]
 
             logging.info("executing prepossing on train and test dataframe")
 
             input_feature_train_array=preprocessor_obj.fit_transform(input_feature_train_df)
-            input_feature_test_array=preprocessor_obj.transform(input_feature_train_df)
+            input_feature_test_array=preprocessor_obj.transform(input_feature_test_df)
 
             train_arr=np.c_[input_feature_train_array,np.array(target_feature_train_df)]
             test_arr=np.c_[input_feature_test_array,np.array(target_feature_test_df)]
@@ -94,4 +94,4 @@ class DataTransformation:
             )
 
         except Exception as ex:
-            raise CustomException(ex,sys)
+            raise CustomeException(ex,sys)

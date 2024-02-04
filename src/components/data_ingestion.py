@@ -59,7 +59,6 @@ if __name__=="__main__":
             data_transformation=DataTransformation()
 
             data_transformation.initiate_data_transformation(train_data,test_data)
-            
+ 
         except Exception as e:
-            logging.error("devide by zero erro from exception")
             raise CustomeException(e,sys)
