@@ -2,6 +2,7 @@ import os
 import sys
 from dataclasses import dataclass
 from catboost import CatBoostRegressor
+from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
 # from sklearn.com import ColumnTransformer
 # from sklearn.impute import SimpleImputer
 # from sklearn.pipeline import Pipeline
@@ -36,8 +37,21 @@ class ModelTrainer:
             logging.info("splitting the train and test data ")
             X_train,y_train,X_test,y_test=(
                 train_array[:,:,-1],
-                train_array[:,-1]
+                train_array[:,-1],
+                test_array[:,:,-1],
+                test_array[:,-1]
             )
+            models={
+                "Random Forest": RandomForestRegressor(),
+                "Decision Tree": DecisionTreeRegressor(),
+                "Bradiant Bossting": GradientBoostingRegressor(),
+                "Linear Regression": LinearRegression(),
+                "K-Neighbour Classifier": KNeighborsRegressor(),
+                "XGB Classifier": XGBRegressor(),
+                "Cat Boost Classfier":CatBoostRegressor(),
+                "AdaBost classifier":AdaBoostRegressor()
+            }
+
         except Exception as ex:
             pass
     
