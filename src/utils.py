@@ -16,7 +16,7 @@ def save_object(file_path,obj):
     except Exception as ex:
         raise CustomeException(ex,sys)
 
-def evaluate_model(X_train,y_train,X_test,y_test,models):
+def evaluate_model(X_train,y_train,X_test,y_test,models,param):
     report = {}
     try:
         for model_name, model in models.items():
