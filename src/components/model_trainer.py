@@ -36,9 +36,9 @@ class ModelTrainer:
             pass
             logging.info("splitting the train and test data")
             X_train,y_train,X_test,y_test=(
+                train_array[:,:-1],  # I did wrong slicing and then faced a issues in data shape . this is the correct slicing
                 train_array[:,-1],
-                train_array[:,-1],
-                test_array[:,-1],
+                test_array[:,:-1],
                 test_array[:,-1]
             )
             models={
@@ -51,10 +51,6 @@ class ModelTrainer:
                 "Cat Boost Classfier":CatBoostRegressor(),
                 "AdaBost classifier":AdaBoostRegressor()
             }
-            logging.info(f"splitting the train and test data {X_train.shape}")
-            X_train = X_train.reshape(-1, 1)
-            X_test = X_test.reshape(-1, 1)
-            logging.info(f"splitting the train and test data {X_train.shape}")
             model_report:dict=evaluate_model(X_train=X_train,y_train=y_train,X_test=X_test,y_test=y_test,models=models)
 
             best_model_score=max(sorted(model_report.values()))
