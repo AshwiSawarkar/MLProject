@@ -2139,3 +2139,139 @@ Traceback (most recent call last):
 TypeError: error_message_details() got an unexpected keyword argument 'error_details'
 
 (d:\MLProject\env) D:\MLProject>
+
+
+After app developemt errors:
+
+999:    learn: 3.0426642        total: 2.93s    remaining: 0us
+0.8804389326535873
+
+(d:\MLProject\env) D:\MLProject>python app.py
+Traceback (most recent call last):
+  File "D:\MLProject\app.py", line 7, in <module>
+    from src.pipeline.predict_pipeline import CustomData,PredictPipeline
+  File "D:\MLProject\src\pipeline\predict_pipeline.py", line 4, in <module>
+    from src.utils import load_object
+ImportError: cannot import name 'load_object' from 'src.utils' (D:\MLProject\src\utils.py)
+
+(d:\MLProject\env) D:\MLProject>python app.py
+Traceback (most recent call last):
+  File "D:\MLProject\app.py", line 7, in <module>
+    from src.pipeline.predict_pipeline import CustomData,PredictPipeline
+  File "D:\MLProject\src\pipeline\predict_pipeline.py", line 4, in <module>
+    from src.utils import load_object
+ImportError: cannot import name 'load_object' from 'src.utils' (D:\MLProject\src\utils.py)
+
+(d:\MLProject\env) D:\MLProject>python app.py
+Traceback (most recent call last):
+  File "D:\MLProject\app.py", line 7, in <module>
+    from src.pipeline.predict_pipeline import CustomData,PredictPipeline
+  File "D:\MLProject\src\pipeline\predict_pipeline.py", line 4, in <module>
+    from src.utils import load_object
+ImportError: cannot import name 'load_object' from 'src.utils' (D:\MLProject\src\utils.py)
+
+(d:\MLProject\env) D:\MLProject>python app.py
+ * Serving Flask app 'app'
+ * Debug mode: on
+Traceback (most recent call last):
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MLProject\app.py", line 19, in predict_datapoint
+    if request.mrthod=='GET':
+       ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Request' object has no attribute 'mrthod'
+   gender race_ethnicity parental_level_of_education         lunch test_preparation_course  reading_score  writing_score
+0  female        group A          associate's degree  free/reduced               completed           99.0          100.0
+Before Prediction
+Mid Prediction
+Traceback (most recent call last):
+  File "D:\MLProject\src\pipeline\predict_pipeline.py", line 15, in predict
+    data_scaled=preprocessor.transfrom(features)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ColumnTransformer' object has no attribute 'transfrom'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MLProject\app.py", line 38, in predict_datapoint
+    results=predict_pipeline.predict(pred_df)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MLProject\src\pipeline\predict_pipeline.py", line 19, in predict
+    raise CustomException(e,sys)
+                          ^^^^^^
+NameError: name 'e' is not defined
+   gender race_ethnicity parental_level_of_education         lunch test_preparation_course  reading_score  writing_score
+0  female        group A          associate's degree  free/reduced                    none           20.0           30.0
+Before Prediction
+Mid Prediction
+Traceback (most recent call last):
+  File "D:\MLProject\src\pipeline\predict_pipeline.py", line 15, in predict
+    data_scaled=preprocessor.transfrom(features)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ColumnTransformer' object has no attribute 'transfrom'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MLProject\app.py", line 38, in predict_datapoint
+    results=predict_pipeline.predict(pred_df)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MLProject\src\pipeline\predict_pipeline.py", line 19, in predict
+    raise CustomException(ex,sys)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MLProject\src\exception.py", line 33, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got an unexpected keyword argument 'error_details'
