@@ -8,7 +8,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder,StandardScaler
-from src.exception import CustomeException
+from src.exception import CustomException
 from src.logger import logging
 from src.utils import save_object
 @dataclass
@@ -86,7 +86,6 @@ class DataTransformation:
                 file_path=self.data_transformation_config.preprocessor_obj_file_path,
                 obj=preprocessor_obj
             )
-
             return(
                 train_arr,test_arr,
                 self.data_transformation_config.preprocessor_obj_file_path
@@ -94,4 +93,4 @@ class DataTransformation:
             )
 
         except Exception as ex:
-            raise CustomeException(ex,sys)
+            raise CustomException(ex,sys)

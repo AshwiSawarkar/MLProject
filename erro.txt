@@ -1,0 +1,1051 @@
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 69, in <module>
+    raise CustomeException("Some error detail or context")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CustomeException.__init__() missing 1 required positional argument: 'error_detail'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 39, in initiate_model_traing
+    train_array[:,:,-1],
+    ~~~~~~~~~~~^^^^^^^^
+IndexError: too many indices for array: array is 2-dimensional, but 3 were indexed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 65, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 79, in initiate_model_traing
+    raise CustomeException(e,sys)
+                           ^
+NameError: name 'e' is not defined. Did you mean: 'ex'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 69, in <module>
+    raise CustomeException(e,sys)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 20, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 39, in initiate_model_traing
+    train_array[:,:,-1],
+    ~~~~~~~~~~~^^^^^^^^
+IndexError: too many indices for array: array is 2-dimensional, but 3 were indexed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 65, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 79, in initiate_model_traing
+    raise CustomeException(e,sys)
+                           ^
+NameError: name 'e' is not defined. Did you mean: 'ex'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 69, in <module>
+    raise CustomException(e,sys)
+          ^^^^^^^^^^^^^^^
+NameError: name 'CustomException' is not defined. Did you mean: 'CustomeException'?
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 7, in <module>
+    from src.exception import CustomeException # custome exception
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: cannot import name 'CustomeException' from 'src.exception' (d:\mlproject\src\exception.py)
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 13, in <module>
+    from src.components.data_transformation import DataTransformation
+  File "d:\mlproject\src\components\data_transformation.py", line 11, in <module>
+    from src.exception import CustomeException
+ImportError: cannot import name 'CustomeException' from 'src.exception' (d:\mlproject\src\exception.py)
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 39, in initiate_model_traing
+    train_array[:,:,-1],
+    ~~~~~~~~~~~^^^^^^^^
+IndexError: too many indices for array: array is 2-dimensional, but 3 were indexed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 65, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 79, in initiate_model_traing
+    raise CustomeException(e,sys)
+          ^^^^^^^^^^^^^^^^
+NameError: name 'CustomeException' is not defined. Did you mean: 'CustomException'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 69, in <module>
+    raise CustomException(e,sys)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 20, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 39, in initiate_model_traing
+    train_array[:,:,-1],
+    ~~~~~~~~~~~^^^^^^^^
+IndexError: too many indices for array: array is 2-dimensional, but 3 were indexed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 65, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 79, in initiate_model_traing
+    raise CustomeException(e,sys)
+          ^^^^^^^^^^^^^^^^
+NameError: name 'CustomeException' is not defined. Did you mean: 'CustomException'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 70, in <module>
+    raise CustomException(e,sys)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 20, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 39, in initiate_model_traing
+    train_array[:,:,-1],
+    ~~~~~~~~~~~^^^^^^^^
+IndexError: too many indices for array: array is 2-dimensional, but 3 were indexed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 65, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 79, in initiate_model_traing
+    raise CustomeException(e,sys)
+          ^^^^^^^^^^^^^^^^
+NameError: name 'CustomeException' is not defined. Did you mean: 'CustomException'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 69, in <module>
+    raise CustomException(e,sys)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 20, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 39, in initiate_model_traing
+    train_array[:,:,-1],
+    ~~~~~~~~~~~^^^^^^^^
+IndexError: too many indices for array: array is 2-dimensional, but 3 were indexed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 65, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 79, in initiate_model_traing
+    raise CustomeException(e,sys)
+          ^^^^^^^^^^^^^^^^
+NameError: name 'CustomeException' is not defined. Did you mean: 'CustomException'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 69, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 20, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 39, in initiate_model_traing
+    train_array[:,:,-1],
+    ~~~~~~~~~~~^^^^^^^^
+IndexError: too many indices for array: array is 2-dimensional, but 3 were indexed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 65, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 79, in initiate_model_traing
+    raise CustomeException(e,sys)
+          ^^^^^^^^^^^^^^^^
+NameError: name 'CustomeException' is not defined. Did you mean: 'CustomException'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 69, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 20, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=None)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 39, in initiate_model_traing
+    train_array[:,:,-1],
+    ~~~~~~~~~~~^^^^^^^^
+IndexError: too many indices for array: array is 2-dimensional, but 3 were indexed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 65, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 79, in initiate_model_traing
+    raise CustomeException(e,sys)
+          ^^^^^^^^^^^^^^^^
+NameError: name 'CustomeException' is not defined. Did you mean: 'CustomException'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 69, in <module>
+    raise CustomException("Encouner an exception",error_detail=[str(e)])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 39, in initiate_model_traing
+    train_array[:,:,-1],
+    ~~~~~~~~~~~^^^^^^^^
+IndexError: too many indices for array: array is 2-dimensional, but 3 were indexed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 65, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 79, in initiate_model_traing
+    raise CustomeException(e,sys)
+          ^^^^^^^^^^^^^^^^
+NameError: name 'CustomeException' is not defined. Did you mean: 'CustomException'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 69, in <module>
+    raise CustomException("Encouner an exception",error_detail=[str(e)])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 39, in initiate_model_traing
+    train_array[:,:,-1],
+    ~~~~~~~~~~~^^^^^^^^
+IndexError: too many indices for array: array is 2-dimensional, but 3 were indexed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 65, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 79, in initiate_model_traing
+    raise CustomeException(e,sys)
+          ^^^^^^^^^^^^^^^^
+NameError: name 'CustomeException' is not defined. Did you mean: 'CustomException'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 69, in <module>
+    raise CustomException("Encouner an exception",error_detail=[str(e)])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 16, in <module>
+    from src.components.model_trainer import ModelTrainerConfig
+  File "d:\mlproject\src\components\model_trainer.py", line 6, in <module>
+    from sklearn.com import ColumnTransformer
+ModuleNotFoundError: No module named 'sklearn.com'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 55, in initiate_model_traing
+    model_report:dict=evaluate_model(X=X_train,y=y_train,x_test=X_test,y_test=y_test,models=models)
+                                       ^^^^^^^
+NameError: name 'X_train' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 65, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 79, in initiate_model_traing
+    raise CustomeException(e,sys)
+          ^^^^^^^^^^^^^^^^
+NameError: name 'CustomeException' is not defined. Did you mean: 'CustomException'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 69, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 55, in initiate_model_traing
+    model_report:dict=evaluate_model(X=X_train,y=y_train,x_test=X_test,y_test=y_test,models=models)
+                                       ^^^^^^^
+NameError: name 'X_train' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 65, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 79, in initiate_model_traing
+    raise CustomeException(e,sys)
+          ^^^^^^^^^^^^^^^^
+NameError: name 'CustomeException' is not defined. Did you mean: 'CustomException'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 69, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 55, in initiate_model_traing
+    model_report:dict=evaluate_model(X=X_train,y=y_train,x_test=X_test,y_test=y_test,models=models)
+                                       ^^^^^^^
+NameError: name 'X_train' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 65, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 79, in initiate_model_traing
+    raise CustomeException(e,sys)
+          ^^^^^^^^^^^^^^^^
+NameError: name 'CustomeException' is not defined. Did you mean: 'CustomException'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 69, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 55, in initiate_model_traing
+    model_report:dict=evaluate_model(X=X_train,y=y_train,x_test=X_test,y_test=y_test,models=models)
+                                       ^^^^^^^
+NameError: name 'X_train' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 65, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 79, in initiate_model_traing
+    raise CustomeException(e,sys)
+          ^^^^^^^^^^^^^^^^
+NameError: name 'CustomeException' is not defined. Did you mean: 'CustomException'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 69, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+(800, 20)
+(200, 20)
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 40, in initiate_model_traing
+    train_array[:,:,-1],
+    ~~~~~~~~~~~^^^^^^^^
+IndexError: too many indices for array: array is 2-dimensional, but 3 were indexed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 65, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 80, in initiate_model_traing
+    raise CustomeException(e,sys)
+          ^^^^^^^^^^^^^^^^
+NameError: name 'CustomeException' is not defined. Did you mean: 'CustomException'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 69, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>pip install numpy
+Requirement already satisfied: numpy in c:\users\ashwi\anaconda3\lib\site-packages (1.26.3)
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 37, in initiate_model_traing
+    logging.info("splitting the train and test data "+train_array.shape+"")
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+TypeError: can only concatenate str (not "tuple") to str
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 65, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 81, in initiate_model_traing
+    raise CustomeException(e,sys)
+          ^^^^^^^^^^^^^^^^
+NameError: name 'CustomeException' is not defined. Did you mean: 'CustomException'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 69, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 36, in initiate_model_traing
+    logging.info("splitting the train and test data "+train_array.shape+"")
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+TypeError: can only concatenate str (not "tuple") to str
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 65, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 80, in initiate_model_traing
+    raise CustomeException(e,sys)
+          ^^^^^^^^^^^^^^^^
+NameError: name 'CustomeException' is not defined. Did you mean: 'CustomException'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 69, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 36, in initiate_model_traing
+    logging.info("splitting the train and test data "+train_array.shape+"")
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+TypeError: can only concatenate str (not "tuple") to str
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 65, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 80, in initiate_model_traing
+    raise CustomException(e,sys)
+                          ^
+NameError: name 'e' is not defined. Did you mean: 'ex'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 69, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 37, in initiate_model_traing
+    logging.info("splitting the train and test data "+train_array.shape+"")
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+TypeError: can only concatenate str (not "tuple") to str
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 65, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 81, in initiate_model_traing
+    raise CustomException(e,sys)
+                          ^
+NameError: name 'e' is not defined. Did you mean: 'ex'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 69, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+[[ 4.84345595  4.97482382  2.00276196 ...  0.          2.09830697
+  62.        ]
+ [ 5.74295491  5.50547169  2.00276196 ...  2.09830697  0.
+  66.        ]
+ [ 6.15810828  5.70446464  2.00276196 ...  0.          2.09830697
+  79.        ]
+ ...
+ [ 4.28991813  3.51554216  2.00276196 ...  0.          2.09830697
+  53.        ]
+ [ 3.32122694  3.51554216  0.         ...  2.09830697  0.
+  50.        ]
+ [ 6.29649274  5.90345759  2.00276196 ...  0.          2.09830697
+  85.        ]]
+[[ 5.9505316   5.57180267  2.00276196 ...  0.          2.09830697
+  91.        ]
+ [ 4.56668704  4.84216185  2.00276196 ...  2.09830697  0.
+  53.        ]
+ [ 5.05103263  4.77583086  0.         ...  0.          2.09830697
+  80.        ]
+ ...
+ [ 5.60457046  5.0411548   2.00276196 ...  0.          2.09830697
+  74.        ]
+ [ 5.32780155  4.90849283  2.00276196 ...  0.          2.09830697
+  65.        ]
+ [ 5.12022486  4.77583086  2.00276196 ...  2.09830697  0.
+  61.        ]]
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 40, in initiate_model_traing
+    train_array[:,:,-1],
+    ~~~~~~~~~~~^^^^^^^^
+IndexError: too many indices for array: array is 2-dimensional, but 3 were indexed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 66, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 80, in initiate_model_traing
+    raise CustomException(e,sys)
+                          ^
+NameError: name 'e' is not defined. Did you mean: 'ex'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 70, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 37, in initiate_model_traing
+    logging.info("started initiate_model_traing"+self+"")
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+TypeError: can only concatenate str (not "ModelTrainer") to str
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 66, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 81, in initiate_model_traing
+    raise CustomException(e,sys)
+                          ^
+NameError: name 'e' is not defined. Did you mean: 'ex'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 70, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 66, in <module>
+    print(modeltrainer.initiate_model_traing(obj,train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ModelTrainer.initiate_model_traing() takes 3 positional arguments but 4 were given
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 70, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 65, in <module>
+    logging.info(""+train_arr+"")
+                 ~~^~~~~~~~~~
+numpy.core._exceptions._UFuncNoLoopError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U1'), dtype('float64')) -> None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 71, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 65, in <module>
+    logging.info(""+train_arr.shape+"")
+                 ~~^~~~~~~~~~~~~~~~
+TypeError: can only concatenate str (not "tuple") to str
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 71, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 34, in initiate_data_ingestion
+    logging.info(""+df+"")
+                 ~~^~~
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\pandas\core\ops\common.py", line 76, in new_method
+    return method(self, other)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\pandas\core\arraylike.py", line 190, in __radd__
+    return self._arith_method(other, roperator.radd)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\pandas\core\frame.py", line 7897, in _arith_method
+    new_data = self._dispatch_frame_op(other, op, axis=axis)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\pandas\core\frame.py", line 7929, in _dispatch_frame_op
+    bm = self._mgr.apply(array_op, right=right)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\pandas\core\internals\managers.py", line 362, in apply
+    applied = b.apply(f, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\pandas\core\internals\blocks.py", line 393, in apply
+    result = func(self.values, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\pandas\core\ops\array_ops.py", line 283, in arithmetic_op
+    res_values = _na_arithmetic_op(left, right, op)  # type: ignore[arg-type]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\pandas\core\ops\array_ops.py", line 218, in _na_arithmetic_op
+    result = func(left, right)
+             ^^^^^^^^^^^^^^^^^
+  File "C:\Users\ashwi\anaconda3\Lib\site-packages\pandas\core\roperator.py", line 11, in radd
+    return right + left
+           ~~~~~~^~~~~~
+numpy.core._exceptions._UFuncNoLoopError: ufunc 'add' did not contain a loop with signature matching types (dtype('<U1'), dtype('int64')) -> None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 59, in <module>
+    train_data,test_data=obj.initiate_data_ingestion()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MLProject\src\components\data_ingestion.py", line 55, in initiate_data_ingestion
+    raise CustomException(e,sys)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 72, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+   gender race_ethnicity parental_level_of_education         lunch test_preparation_course  math_score  reading_score  writing_score
+0  female        group B           bachelor's degree      standard                    none          72             72             74
+1  female        group C                some college      standard               completed          69             90             88
+2  female        group B             master's degree      standard                    none          90             95             93
+3    male        group A          associate's degree  free/reduced                    none          47             57             44
+4    male        group C                some college      standard                    none          76             78             75
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 69, in <module>
+    logging.info(""+train_arr.shape+"")
+                 ~~^~~~~~~~~~~~~~~~
+TypeError: can only concatenate str (not "tuple") to str
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 75, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+   gender race_ethnicity parental_level_of_education         lunch test_preparation_course  math_score  reading_score  writing_score
+0  female        group B           bachelor's degree      standard                    none          72             72             74
+1  female        group C                some college      standard               completed          69             90             88
+2  female        group B             master's degree      standard                    none          90             95             93
+3    male        group A          associate's degree  free/reduced                    none          47             57             44
+4    male        group C                some college      standard                    none          76             78             75
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\data_transformation.py", line 89, in initiate_data_transformation
+    logging.info("Saving preprocessing Objects_saved File to "+preprocessor_obj_file_path+"")
+                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'preprocessor_obj_file_path' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 66, in <module>
+    train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_data,test_data)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\data_transformation.py", line 97, in initiate_data_transformation
+    raise CustomeException(ex,sys)
+          ^^^^^^^^^^^^^^^^
+NameError: name 'CustomeException' is not defined. Did you mean: 'CustomException'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 75, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+   gender race_ethnicity parental_level_of_education         lunch test_preparation_course  math_score  reading_score  writing_score
+0  female        group B           bachelor's degree      standard                    none          72             72             74
+1  female        group C                some college      standard               completed          69             90             88
+2  female        group B             master's degree      standard                    none          90             95             93
+3    male        group A          associate's degree  free/reduced                    none          47             57             44
+4    male        group C                some college      standard                    none          76             78             75
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\data_transformation.py", line 89, in initiate_data_transformation
+    logging.info("Saving preprocessing Objects_saved File to "+preprocessor_obj_file_path+"")
+                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'preprocessor_obj_file_path' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 66, in <module>
+    train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_data,test_data)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\data_transformation.py", line 97, in initiate_data_transformation
+    raise CustomeException(ex,sys)
+          ^^^^^^^^^^^^^^^^
+NameError: name 'CustomeException' is not defined. Did you mean: 'CustomException'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 75, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+   gender race_ethnicity parental_level_of_education         lunch test_preparation_course  math_score  reading_score  writing_score
+0  female        group B           bachelor's degree      standard                    none          72             72             74
+1  female        group C                some college      standard               completed          69             90             88
+2  female        group B             master's degree      standard                    none          90             95             93
+3    male        group A          associate's degree  free/reduced                    none          47             57             44
+4    male        group C                some college      standard                    none          76             78             75
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\data_transformation.py", line 89, in initiate_data_transformation
+    logging.info("Saving preprocessing Objects_saved File to "+preprocessor_obj_file_path+"")
+                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'preprocessor_obj_file_path' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 66, in <module>
+    train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_data,test_data)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\data_transformation.py", line 97, in initiate_data_transformation
+    raise CustomeException(ex,sys)
+          ^^^^^^^^^^^^^^^^
+NameError: name 'CustomeException' is not defined. Did you mean: 'CustomException'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 75, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+   gender race_ethnicity parental_level_of_education         lunch test_preparation_course  math_score  reading_score  writing_score
+0  female        group B           bachelor's degree      standard                    none          72             72             74
+1  female        group C                some college      standard               completed          69             90             88
+2  female        group B             master's degree      standard                    none          90             95             93
+3    male        group A          associate's degree  free/reduced                    none          47             57             44
+4    male        group C                some college      standard                    none          76             78             75
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\data_transformation.py", line 89, in initiate_data_transformation
+    logging.info("Saving preprocessing Objects_saved File to "+preprocessor_obj_file_path+"")
+                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'preprocessor_obj_file_path' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 66, in <module>
+    train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_data,test_data)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\data_transformation.py", line 97, in initiate_data_transformation
+    raise CustomException(ex,sys)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 75, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+   gender race_ethnicity parental_level_of_education         lunch test_preparation_course  math_score  reading_score  writing_score
+0  female        group B           bachelor's degree      standard                    none          72             72             74
+1  female        group C                some college      standard               completed          69             90             88
+2  female        group B             master's degree      standard                    none          90             95             93
+3    male        group A          associate's degree  free/reduced                    none          47             57             44
+4    male        group C                some college      standard                    none          76             78             75
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 69, in <module>
+    logging.info(""+train_arr.shape+"")
+                 ~~^~~~~~~~~~~~~~~~
+TypeError: can only concatenate str (not "tuple") to str
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 75, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 39, in initiate_model_traing
+    train_array[:,:,-1],
+    ~~~~~~~~~~~^^^^^^^^
+IndexError: too many indices for array: array is 2-dimensional, but 3 were indexed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 67, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 79, in initiate_model_traing
+    raise CustomeException(e,sys)
+          ^^^^^^^^^^^^^^^^
+NameError: name 'CustomeException' is not defined. Did you mean: 'CustomException'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 71, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+
+
+======================================================================
+
+    raise CustomeException(e,sys)
+
+(d:\MLProject\env) D:\MLProject>python src/components/data_ingestion.py
+Traceback (most recent call last):
+  File "d:\mlproject\src\components\model_trainer.py", line 39, in initiate_model_traing
+    train_array[:,:,-1],
+    ~~~~~~~~~~~^^^^^^^^
+IndexError: too many indices for array: array is 2-dimensional, but 3 were indexed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 67, in <module>
+    print(modeltrainer.initiate_model_traing(train_arr,test_arr))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\components\model_trainer.py", line 79, in initiate_model_traing
+    raise CustomeException(e,sys) 
+          ^^^^^^^^^^^^^^^^
+NameError: name 'CustomeException' is not defined. Did you mean: 'CustomException'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MLProject\src\components\data_ingestion.py", line 71, in <module>
+    raise CustomException(e,"list of arrays")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\mlproject\src\exception.py", line 22, in __init__
+    self.error_messsage=error_message_details(error_messsage,error_details=error_detail)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: error_message_details() got multiple values for argument 'error_details'
+
+(d:\MLProject\env) D:\MLProject>^A
